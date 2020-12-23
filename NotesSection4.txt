@@ -1,0 +1,7 @@
+Fluent Validation in Asp.net Web API
+https://www.carlrippon.com/fluentvalidation-in-an-asp-net-core-web-api/
+
+
+dotnet ef database drop
+dotnet ef database update
+dotnet watch run
