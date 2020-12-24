@@ -100,3 +100,5 @@ dotnet watch run
   71 ng serve
   72 ng serve
   73 ng serve
+  74 ng g c register --skip-tests
+  75 npm install ngx-toastr
