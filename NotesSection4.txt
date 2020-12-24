@@ -5,3 +5,98 @@ https://www.carlrippon.com/fluentvalidation-in-an-asp-net-core-web-api/
 dotnet ef database drop
 dotnet ef database update
 dotnet watch run
+
+  Id CommandLine
+  -- -----------
+   1 dotnet run
+   2 cd .\API\
+   3 dotnet run
+   4 dotnet run
+   5 dotnet watch  run
+   6 dotnet ef migrations add UserPasswordAdded
+   7 dotnet ef database update
+   8 dotnet watch  run
+   9 dotnet watch  run
+  10 dotnet watch  run
+  11 dotnet ef database drop
+  12 dotnet ef database update
+  13 dotnet watch  run
+  14 dotnet watch  run
+
+  */*//************************
+
+    Id CommandLine
+  -- -----------
+   1 cd C:\Emmanuel\Training\CLOVIS_TANGA\Angular\vega
+   2 dotnet run
+   3 npm serve
+   4 ls
+   5 code .
+   6 cd..
+   7 cd .\dating\
+   8 node --version
+   9 cls
+  10 cd ..
+  11 mkdir DatingApp
+  12 cd .\dating\
+  13 mkdir DatingApp
+  14 cd ..
+  15 ls<
+  16 ls
+  17 cd .\DatingApp\
+  18 cls
+  19 dotnet --info
+  20 cls
+  21 cls
+  22 dotnet --info
+  23 cls
+  24 history
+  25 cls
+  26 dotnet -h
+  27 cls
+  28 dotnet new -h
+  29 cls
+  30 dotnet new -h
+  31 dotnet new --help
+  32 cls
+  33 dotnet new sln
+  34 ls
+  35 cls
+  36 dotnet new webapi -o API
+  37 ls
+  38 dotnet sln add .\API\API.csproj
+  39 code .
+  40 cd .\API\
+  41 dotnet run
+  42 dotnet dev-certs https --trust
+  43 dotnet run
+  44 dotnet run
+  45 cls
+  46   dotnet tool install --global dotnet-ef --version 5.0.1
+  47 dotnet ef migrations add InitialCreate -o Data/Migrations
+  48 dotnet ef migrations add InitialCreate -o Data/Migrations
+  49 dotnet ef database update
+  50 cd ..
+  51 git status
+  52 git init
+  53 dotnet new gitignore
+  54 cls
+  55 git remote add origin https://github.com/enguemeta/WepAPIDotNet5Angular10DatingApp.git
+  56 git push -u origin main
+  57 git push -u origin master
+  58 git status
+  59 git commit -m "End of section 2"
+  60 git add .
+  61 git commit -m "End of section 2"
+  62 git push -u origin master
+  63 history
+  64 cls
+  65 node --version
+  66 npm --version
+  67 npm install -g @angular/cli
+  68 ng new client
+  69 cd .\client\
+  70 ng serve
+  71 ng serve
+  72 ng serve
+  73 ng serve
