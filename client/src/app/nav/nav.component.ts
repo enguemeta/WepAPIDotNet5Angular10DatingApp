@@ -24,12 +24,8 @@ export class NavComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   public login() {
-    this.accountService.login(this.model).subscribe((response) => {
-       //console.log(response);
+    this.accountService.login(this.model).subscribe((response) => {       
        this.router.navigateByUrl("/members");
-      }, (error) => {
-        console.error(error);
-        this.toastr.error(error.error);
       });
   }
   // tslint:disable-next-line:typedef
