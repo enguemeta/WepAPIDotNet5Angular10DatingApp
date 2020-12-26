@@ -1,0 +1,13 @@
+  Id CommandLine
+  -- -----------
+   1 cd .\API\
+   2 dotnet watch run
+   3 dotnet ef migrations add ExtendedUserEntity
+   4 dotnet ef migrations remove
+   5 dotnet ef migrations add ExtendedUserEntity
+   6 dotnet ef update database
+   7 dotnet ef database update
+
+
+   Json generator for seedin0g 
+    https://www.json-generator.com/
