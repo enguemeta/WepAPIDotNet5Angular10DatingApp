@@ -11,3 +11,22 @@
 
    Json generator for seedin0g 
     https://www.json-generator.com/
+
+    // TOPICS
+    Entity framework relationShips
+    Entity Framework conventions
+    Seeding data into the database
+    The repository pattern
+    Using AutoMapper
+
+// Shopping cart
+https://www.youtube.com/watch?v=k1kb-Aqy1t4
+
+
+// Convert Json To Ts
+http://www.jsontots.com/
+
+// ngx-bootstrap
+
+//ngx-gallery
+npm install @kolkov/ngx-gallery
