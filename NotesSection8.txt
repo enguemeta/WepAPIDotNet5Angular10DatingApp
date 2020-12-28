@@ -26,7 +26,15 @@ https://www.youtube.com/watch?v=k1kb-Aqy1t4
 // Convert Json To Ts
 http://www.jsontots.com/
 
+// install angular cdk
+npm install @angular/cdk
+
 // ngx-bootstrap
 
 //ngx-gallery
 npm install @kolkov/ngx-gallery
+
+//ngx-spinner
+ npm install ngx-spinner
+ng add ngx-spinner
+-- > https://www.youtube.com/watch?v=H9KLIbisVJ8
