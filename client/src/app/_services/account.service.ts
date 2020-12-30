@@ -34,14 +34,14 @@ export class AccountService {
     return this.http.post(this.baseUrl + 'accout/register', model).pipe(
       map((user: User) => {
         if(user) {
-          localStorage.setItem('user', JSON.stringify(user));
-          this.currentUserSource.next(user);
+          this.setCurrentUser(user);
         }
       })
     );
   }
 
   public setCurrentUser(user : User){
+    localStorage.setItem('user', JSON.stringify(user));
     this.currentUserSource.next(user);
   }
 

@@ -1,0 +1,8 @@
+// Cloudinary to store images
+ https://www.cloudinary.com
+
+ //cloud-4b-wins
+
+ //ng2-file-upload
+ npm install ng2-file-upload 
+

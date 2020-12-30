@@ -2,6 +2,12 @@
     cursor: pointer;
 }
 
+img{
+    max-height: 50px;
+    border: 2px solid #fff;
+    display: inline;
+}
+
 nav {
     box-shadow: 0 0.2rem 1rem #ccc;
 }
