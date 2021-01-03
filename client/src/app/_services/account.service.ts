@@ -1,9 +1,9 @@
-import { environment } from './../../environments/environment';
-import { User } from './../_models/user';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
 import { ReplaySubject } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { environment } from './../../environments/environment';
+import { User } from './../_models/user';
 
 @Injectable({
   providedIn: 'root',
@@ -19,28 +19,33 @@ export class AccountService {
   public login(model: any) {
     return this.http.post(`${this.baseUrl}account/login`, model).pipe(
       map((response: User) => {
-        const user = response;
+        let user: User = {};
+         user.username = response.userName;
+         user.token = response.token;
+         user.photoUrl = response.photoUrl;
+         user.knownAs = response.knownAs;
+        
         if (user) {
           localStorage.setItem('user', JSON.stringify(user));
           this.currentUserSource.next(user);
-          
+
+        }
+      }),
+    );
+  }
+
+  public register(model: any) {
+    return this.http.post(this.baseUrl + 'account/register', model).pipe(
+      map((user: User) => {
+        if (user) {
+          this.setCurrentUser(user);
         }
       }),
     );
   }
 
 
-  public register(model: any) {
-    return this.http.post(this.baseUrl + 'accout/register', model).pipe(
-      map((user: User) => {
-        if(user) {
-          this.setCurrentUser(user);
-        }
-      })
-    );
-  }
-
-  public setCurrentUser(user : User){
+  public setCurrentUser(user: User) {
     localStorage.setItem('user', JSON.stringify(user));
     this.currentUserSource.next(user);
   }

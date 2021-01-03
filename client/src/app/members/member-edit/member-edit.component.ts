@@ -16,8 +16,10 @@ export class MemberEditComponent implements OnInit {
   @ViewChild('editForm') editForm: NgForm;
  public member: Member;
  public user: User;
+
  @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any){
-   if(this.editForm.dirty){
+
+   if(this.editForm !== undefined && this.editForm.dirty) {
      $event.returnValue = true;
    }
  }
@@ -32,7 +34,7 @@ export class MemberEditComponent implements OnInit {
   }
 
   loadMember() {
-    this.membersService.getMember(this.user.userName).subscribe((member) => {
+    this.membersService.getMember(this.user.username).subscribe((member) => {
       this.member = member;
     })
   }
