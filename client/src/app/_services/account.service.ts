@@ -19,11 +19,11 @@ export class AccountService {
   public login(model: any) {
     return this.http.post(`${this.baseUrl}account/login`, model).pipe(
       map((response: User) => {
-        let user: User = {};
-         user.username = response.userName;
-         user.token = response.token;
-         user.photoUrl = response.photoUrl;
-         user.knownAs = response.knownAs;
+        let user: User = response;
+        //  user.username = response.userName;
+        //  user.token = response.token;
+        //  user.photoUrl = response.photoUrl;
+        //  user.knownAs = response.knownAs;
         
         if (user) {
           localStorage.setItem('user', JSON.stringify(user));

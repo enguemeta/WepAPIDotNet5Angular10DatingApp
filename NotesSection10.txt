@@ -6,3 +6,5 @@
  //ng2-file-upload
  npm install ng2-file-upload 
 
+ npm install ngx-timeago
+
